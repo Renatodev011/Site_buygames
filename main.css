@@ -1,0 +1,140 @@
+* {
+    margin: 0; /*define a área de margem nos quatro lados do elemento.*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {    /*Altera o header e altera o h2 de toda a seção*/
+    font-family: 'Bungee', sans-serif; /*fonte pega no site de fonts do google*/
+    color: darkslateblue;
+    font-weight: normal; /*deixa a fonte mais nitida*/
+}
+
+body, input, textarea {  /*vai mudar todos os textos contido no body do html*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header /*cabeçalho*/ {
+    padding: 16px 0; /*distancia interna da borda*/
+    background-color: darkslateblue; /*cor de fundo*/
+    color: rgb(255, 255, 255); /*Cor das letras*/
+}
+
+header nav li{  /*para alterar os links do cabeçalho*/
+    display: inline; /*Para ficar um ao lado do outro*/
+    margin-left: 16px; /*Distanciar os links*/
+    font-size: 18px; /*altera tamanho dos textos*/
+}
+
+header nav li a {   /*Para alterar a cor dos link deve usar o "a"*/
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*retirar o underline*/
+}
+
+.container {    /*Div container engloba todo o header*/
+    max-width: 1280px; /*largura maxima*/
+    width: 100%; /*vai ocupar 100% da largura*/
+    margin: 0 auto; /*topo e baixo 0, laterais auto*/
+}
+
+header .container {     /*Alterar mecher no container que esta no header*/
+    display: flex; /*todos os filhos ficam um do lado do outro*/
+    align-items: center; /*Para alinhar na vertical */
+    justify-content: space-between; /*Separa os elementos e deixam no final da tela*/
+}
+.brands-list img  { /*Modificar o tamanho das imagens da classe brands-list*/
+    height: 24px;
+    margin-top: 8px; /*modificar a margem de cima dos logos */
+    margin-right: 8px; /* distanciar os  logos uns dos outros*/
+}
+
+.brands-list li { 
+    display: inline; /*Inline coloca as um ao lado do outro*/
+}
+
+section .container {    /*Modificar tudo que engloba o container*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section {
+    padding: 24px 0; /*Criar um espaçamento */
+}
+
+section h2 {
+    margin-bottom: 16px; /*criar uma margem na parte inferior do titulo*/
+    color: darkslateblue; /*cor do texto h2*/
+}
+
+section p  {    /*Editar o parágrafo*/
+    margin-bottom: 8px;
+    color: darkslateblue;
+}
+
+.store-front {  /*foi criado a classe para a alteração somente da imagem*/
+    margin-right: 32px; /*Colocar um margem a direita da imagem */
+}
+
+.social-links img {     /*Alterar as imagens da classe social-links*/
+    height: 24px; /*mudar a altura das img*/
+}
+
+.social-links li,
+a {
+    display: inline;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, 
+form textarea,
+form button {  /*alteração das formulas*/
+    display: flex;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none; /*comando para deixar a area de texto fixa*/
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: rgb(67, 56, 138);
+    color:  #fff;
+    border: none; /*retirar as bordas do botão*/
+    cursor: pointer; /*quando o mouse passar por cima do botão mudar*/
+}
+
+form button:hover {
+    background-color: rgb(120, 95, 195);
+}
+
+input:focus, textarea:focus{
+    outline-color: rgb(67, 56, 138); 
+}
+
+footer,
+.rodape-text {
+    color: #fff;
+    background-color: rgb(67, 56, 138);
+    padding: 18px 0;
+}

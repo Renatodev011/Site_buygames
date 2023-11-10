@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Games</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap">
+</head>
+<body>
+    <header>
+                <div class="container">
+                    <h1>Buy Games</h1>
+                <nav>
+                    <ul> <!--lista não ordenada-->
+                        <li> <!--Lista ordenada-->
+                            <a href="#about">Sobre a loja</a> <!--Abrir um link-->
+                        </li>
+                        <li>
+                            <a href="#contact">Contatos</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+        </header>
+        <section id="about"> <!--Abrir seção-->
+            <div class="container">
+                <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja de games" /> <!--Adicionar uma imagem-->
+                <div>
+                    <h2>Sobre a loja</h2>
+                    <p> <!--Abrir um parágrafo-->
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus quas id ipsum dolorem explicabo suscipit placeat fugit, quisquam porro, vitae adipisci quibusdam incidunt quis sequi asperiores, nobis debitis voluptates.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis nobis ad blanditiis at, incidunt velit facilis dolores repudiandae magnam autem eaque sed quibusdam labore aspernatur sequi doloremque accusamus laborum.
+                    </p>
+                    <ul class="brands-list"> <!--Criar uma classe pra englobar as imagens-->
+                        <li><img src="./images/nintendo.png" alt="nintendo"/></li>
+                        <li><img src="./images/xbox.png" alt="xbox"/></li>
+                        <li><img src="./images/playstation.png" alt="playstation"/></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section> <!--nova seção para os formularios-->
+            <section id="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <div class="contact-methods">
+                    <div>
+                        <h3>Fale conosco</h3>
+                        <form> <!--criação do formulário de contato do site-->
+                            <input type="text" placeholder="Digite seu nome" required /> <!--required é uma obrigatoriedade para o usuario colocar-->
+                            <input type="email" placeholder="Digite seu email" required />
+                            <input type="tel" placeholder="Digite seu telefone (opcional)" />
+                            <textarea placeholder="Sua mensagem" required ></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Nossas redes</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#" title="Siga nos Instagram">
+                                    <img src="./images/instagram.png" alt="logo instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga nos Facebook">
+                                    <img src="./images/facebook.png" alt="logo facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga nos Youtube">
+                                    <img src="./images/youtube.png" alt="logo Youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Venha ate nós</h3>
+                        <p>
+                            Rua Falsa nº1, Vila sol - São  Paulo, SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p class="rodape-text"> <!--coloquei uma class, pois tinha um p atrapalhando a mudança de cor do rodape-->
+                    &copy; Buy Games - todos os direitos reservados - 2023
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
